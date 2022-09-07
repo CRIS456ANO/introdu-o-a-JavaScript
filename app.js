@@ -37,3 +37,15 @@ res.innerHTML += `<p>Ela está acima de 60 Km/h e por isso você foi <strong>MUL
     res.innerHTML += `Tome sempre cuidado, use sempre cinto de segurança.`
      
  }
+ function calcularIdade() {
+    var idade = window.document.querySelector('input#idadeDeVoto')
+    var votar = window.document.querySelector('div#votar')
+    var idadeDeVoto = Number(idade.value)
+    if (idadeDeVoto < 16) {
+        votar.innerHTML += `Sua idade é ${idadeDeVoto} e portanto você não pode votar ainda. <br>`
+    } else if (idadeDeVoto <= 18 || idadeDeVoto >= 67)  {
+        votar.innerHTML += `Sua idade é ${idadeDeVoto} e portanto o voto é opcional. <br>`
+    } else {
+        votar.innerHTML += `Sua idade é ${idadeDeVoto} e o seu voto é obrigatório. <br>`
+    }
+}

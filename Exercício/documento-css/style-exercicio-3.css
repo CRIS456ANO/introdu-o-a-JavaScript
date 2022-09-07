@@ -1,32 +1,27 @@
 body {
-    background-color: rgb(69, 69, 253);
+    background-image: url(../../imagens/Natureza-com-corte.jpg);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 50px;
-    
 }
 header {
-    color: white;
+    color: black;
     text-align: center;
 }
 section {
     background-color: white;
     border-radius: 10px;
     padding: 15px;
-    width: 500px;
+    width: 580px;
+    height: 320px;
     margin: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.678);
 }
 footer {
-    color: white;
+    color: black;
     text-align: center;
 }
 a {
-    color: white;
-    text-align: right;
+    color: black;
+    text-align: center;
     text-decoration: none;
     font-weight: 700;
-}
-div {
-    text-align: center;
-    padding: 10px;
 }

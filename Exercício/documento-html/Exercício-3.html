@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../documento-css/style-exercicio-1.css">
-    <title>Exercício 1</title>
+    <link rel="stylesheet" href="../documento-css/style-exercicio-3.css">
+    <title>Idade para votar</title>
 </head>
-<body onload="carregar()">
+<body>
     <header>
-        <h2>Hora do dia</h2>
+        <h1>Idade para votar</h1>
     </header>
     <section>
-        <div id="msg"> </div>
-        <div id="foto">
-            <img id="imagem" src="../../imagens/fotomanha.png" alt="foto da manhã">
-        </div>
+        <p>Qual é a sua idade? <input type="number" name="idade" id="idadeDeVoto"> <input type="button" value="verificar" onclick="calcularIdade()"></p>
+            <div id="votar">
+        
+            </div>
     </section>
     <footer>
         <p>&copy; Cristiano</p>
         <p><a href="../../index.html">Voltar à página principal</a></p>
     </footer>
+    
     <script src="../../app.js"></script>
 </body>
 </html>
