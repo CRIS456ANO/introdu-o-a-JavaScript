@@ -10,7 +10,9 @@ function carregar() {
     var now = new Date()
     var hora = now.getHours()
     var minutos = now.getMinutes()
-    
+    var dia = new Date()
+    var diaSem = dia.getDay()
+        
     if (hora >= 0 && hora < 12) {
         img.src = '../../imagens/fotomanha.png'
         document.body.style.background = '#d99b63'
@@ -24,6 +26,31 @@ function carregar() {
         document.body.style.background = '#1a1f29'
         msg.innerHTML = `Boa noite, agora são ${hora}:${minutos} horas.`
     }
+    // switch(diaSem) {
+    //     case 0: 
+    //         msg.innerHTML = `E bom domingo.`
+    //         break
+    //     case 1: 
+    //         msg.innerHTML = `E hoje é segunda-feira, bom inicio de semana.`
+    //         break
+    //     case 2: 
+    //         msg.innerHTML = `E hoje é terça-feira.`
+    //         break
+    //     case 3: 
+    //         msg.innerHTML = `E hoje é quarta-feira.`
+    //         break
+    //     case 4: 
+    //         msg.innerHTML = `E hoje é quinta-feira.`
+    //         break
+    //     case 5: 
+    //        msg.innerHTML = `E hoje é sexta-feira, Bom final de semana.`
+    //         break
+    //     case 6: 
+    //         msg.innerHTML = `E hoje é sábado.`
+    //         break
+    //     default: 
+    //         msg.innerHTML = `[ERRO] Dia inválido.`
+    // }
 }
 
 function calcular() {
