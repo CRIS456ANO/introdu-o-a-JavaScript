@@ -1,16 +1,19 @@
 // var nome = window.prompt("Como você se chama?")
 // window.alert(`Muito prazer ${nome}. Bem vindo.`)
 function carregar() {
-    var msgHora = window.document.getElementById('msg')
-    var imagem = window.document.getElementById('fotodahora')
+    var msg = window.document.getElementById('msg')
+    var img = window.document.getElementById('imagem')
     var now = new Date()
     var hora = now.getHours()
-    msg.innerHTML = `Agora são ${hora} horas.`
-    if (hora > 0 && hora < 12) {
-        imagem.src = '../imagens/foto-manha.png'
+    var minutos = now.getMinutes()
+    msg.innerHTML = `Agora são ${hora}:${minutos} horas.`
+
+    if (hora >= 0 && hora < 12) {
+        img.src = '../imagens/foto-manha.png'
+        document.body.style.background = '#ffffff'
     } else if (hora < 18) {
-        imagem.src = '../imagens/fototarde.png'
+        img.src = '../imagens/fototarde.png'
     } else {
-        imagem.src = '../imagens/fotonoite.png'
+        img.src = '../imagens/fotonoite.png'
     }
 }
