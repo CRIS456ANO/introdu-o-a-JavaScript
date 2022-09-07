@@ -23,6 +23,7 @@ footer {
 a {
     color: white;
     text-align: right;
+    text-decoration: none;
 }
 div {
     text-align: center;

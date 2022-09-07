@@ -10,7 +10,8 @@ header {
     text-align: center;
     width: 600px;
     border-radius: 10px;
-    padding: 5px;
+    padding: 2px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.678);
 }
 footer {
     background-color: #564787;
@@ -19,6 +20,7 @@ footer {
     text-align: center;
     width: 600px;
     border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.678);
 }
 
 section {
@@ -39,4 +41,7 @@ th, tr, td {
     color: #564787;
     font-size: 25px;
     padding: 10px;
+}
+a {
+    text-decoration: none;
 }
