@@ -1,0 +1,26 @@
+body {
+    background-image: url(../../imagens/noite-full.jpg);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header {
+    color: white;
+    text-align: center;
+}
+section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 580px;
+    height: 320px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.678);
+}
+footer {
+    color: white;
+    text-align: center;
+}
+a {
+    color: white;
+    text-align: right;
+    text-decoration: none;
+}
