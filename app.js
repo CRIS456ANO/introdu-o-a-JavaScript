@@ -7,6 +7,7 @@ function saudar() {
 function carregar() {
     var msg = window.document.getElementById('msg')
     var img = window.document.getElementById('imagem')
+    var DiaDaSemana = window.document.getElementById('DiaDaSemana')
     var now = new Date()
     var hora = now.getHours()
     var minutos = now.getMinutes()
@@ -26,31 +27,31 @@ function carregar() {
         document.body.style.background = '#1a1f29'
         msg.innerHTML = `Boa noite, agora são ${hora}:${minutos} horas.`
     }
-    // switch(diaSem) {
-    //     case 0: 
-    //         msg.innerHTML = `E bom domingo.`
-    //         break
-    //     case 1: 
-    //         msg.innerHTML = `E hoje é segunda-feira, bom inicio de semana.`
-    //         break
-    //     case 2: 
-    //         msg.innerHTML = `E hoje é terça-feira.`
-    //         break
-    //     case 3: 
-    //         msg.innerHTML = `E hoje é quarta-feira.`
-    //         break
-    //     case 4: 
-    //         msg.innerHTML = `E hoje é quinta-feira.`
-    //         break
-    //     case 5: 
-    //        msg.innerHTML = `E hoje é sexta-feira, Bom final de semana.`
-    //         break
-    //     case 6: 
-    //         msg.innerHTML = `E hoje é sábado.`
-    //         break
-    //     default: 
-    //         msg.innerHTML = `[ERRO] Dia inválido.`
-    // }
+    switch(diaSem) {
+        case 0: 
+            DiaDaSemana.innerHTML = `E bom domingo.`
+            break
+        case 1: 
+            DiaDaSemana.innerHTML = `E hoje é segunda-feira, bom inicio de semana.`
+            break
+        case 2: 
+            DiaDaSemana.innerHTML = `E hoje é terça-feira.`
+            break
+        case 3: 
+            DiaDaSemana.innerHTML = `E hoje é quarta-feira.`
+            break
+        case 4: 
+            DiaDaSemana.innerHTML = `E hoje é quinta-feira.`
+            break
+        case 5: 
+           DiaDaSemana.innerHTML = `E hoje é sexta-feira, Bom final de semana.`
+            break
+        case 6: 
+            DiaDaSemana.innerHTML = `E hoje é sábado.`
+            break
+        default: 
+            DiaDaSemana.innerHTML = `[ERRO] Dia inválido.`
+    }
 }
 
 function calcular() {
