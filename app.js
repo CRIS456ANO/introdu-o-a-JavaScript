@@ -77,3 +77,19 @@ res.innerHTML += `<p>Ela está acima de 60 Km/h e por isso você foi <strong>MUL
         votar.innerHTML += `Sua idade é ${idadeDeVoto} e o seu voto é obrigatório. <br>`
     }
 }
+
+function tabuada() {
+    var number = window.document.querySelector('input#tabuada')
+    var numero = Number(number.value)
+    var restabuada = window.document.querySelector('div#restabuada')
+    var cont = 1
+    var m = numero * cont
+    // for (var m = numero * cont ; cont <= 10 ; cont++) {
+    //     restabuada.innerHTML += `${numero} x ${cont} = ${m} <br>`
+    // }
+    while (cont <= 10) {
+        restabuada.innerHTML += `${numero} x ${cont} = ${m} <br>`
+        cont++
+    }
+
+}
