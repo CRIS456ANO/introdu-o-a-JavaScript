@@ -1,9 +1,12 @@
+// Função para pegar o nome do usuário como uma variável e saudá-lo por nome em seguida
+// Função presente na página inicial index.html
 function saudar() {
     var nome = window.prompt("Como você se chama?")
     window.alert(`Muito prazer ${nome}. Bem vindo.`)
 }
 
-
+// Função que diz a hora e o dia da semana e muda de imagen e cor de fundo conforme muda a hora
+// Função presente na página do exercício-1.html
 function carregar() {
     var msg = window.document.getElementById('msg')
     var img = window.document.getElementById('imagem')
@@ -54,6 +57,8 @@ function carregar() {
     }
 }
 
+// Função que o usuário diz uma velocidade e o programa informa qual é e se está acima da velocidade permitida e se recebeu uma multa
+// Função presente na página do exercício-2.html
 function calcular() {
     var txtv = window.document.querySelector('input#txtvel')
     var res = window.document.querySelector('div#res')
@@ -65,6 +70,9 @@ res.innerHTML += `<p>Ela está acima de 60 Km/h e por isso você foi <strong>MUL
     res.innerHTML += `Tome sempre cuidado, use sempre cinto de segurança.`
      
  }
+
+// Função que diz a situação em relação ao voto no sistema brasileiro depedendo da idade
+// Função presente na página do exercício-3.html
  function calcularIdade() {
     var idade = window.document.querySelector('input#idadeDeVoto')
     var votar = window.document.querySelector('div#votar')
@@ -78,18 +86,24 @@ res.innerHTML += `<p>Ela está acima de 60 Km/h e por isso você foi <strong>MUL
     }
 }
 
+// Função que mostra a tabuada do número que o usuário definir
+// Função presente na página do exercício-5.html
 function tabuada() {
-    var number = window.document.querySelector('input#tabuada')
-    var numero = Number(number.value)
-    var restabuada = window.document.querySelector('div#restabuada')
-    var cont = 1
-    var m = numero * cont
-    // for (var m = numero * cont ; cont <= 10 ; cont++) {
-    //     restabuada.innerHTML += `${numero} x ${cont} = ${m} <br>`
-    // }
-    while (cont <= 10) {
-        restabuada.innerHTML += `${numero} x ${cont} = ${m} <br>`
-        cont++
+    let number = document.getElementById('tabuada')
+    let restabuada = document.getElementById('restabuada')
+    let cont = 1
+    
+    if (number.value.length == 0) {
+        window.alert("Por favor, digite um número.")
+    } else {
+        let numero = Number(number.value)
+        restabuada.innerHTML = ''
+        while (cont <= 10) {
+            let item = document.createElement('option')
+            item.text = `${numero} x ${cont} = ${numero*cont}`
+            item.value = `restabuada${cont}`
+            restabuada.appendChild(item)
+            cont++
+        }
     }
-
 }
