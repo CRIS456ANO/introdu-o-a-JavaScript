@@ -10,7 +10,7 @@ section {
     background-color: white;
     border-radius: 10px;
     padding: 15px;
-    width: 580px;
+    width: 60%;
     height: 320px;
     margin: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.678);
@@ -24,4 +24,30 @@ a {
     text-align: center;
     text-decoration: none;
     font-weight: 700;
+}
+input{
+    background-color: white;
+    font-size: 100%;
+    color: #71C6EB;
+    border: 1px solid #71C6EB; 
+    border-radius: 30px;
+    width: 20%;
+    text-align: center;
+}
+.button {
+    background-color: white;
+    font-size: 100%;
+    padding: 2px;
+    color: #71C6EB;
+    border: 2px solid #71C6EB;
+    border-radius: 30px;
+    width: 20%;
+}
+.button:hover {
+    background-color: #71C6EB;
+    font-size: 100%;
+    color: white;
+    border: 1px solid #71C6EB;
+    border-radius: 30px;
+    width: 20%;
 }
